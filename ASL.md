@@ -21,3 +21,14 @@
 	
 * Website
 	* https://acpica.org/downloads
+	
+* SCI : A system interrupt used by hardware to notify the OS of ACPI events. The SCI is active low, sharable
+
+
+* Process
+	* Write ASL 
+	* use ASL.exe to compile ASL file to AML
+	* put AML in BIOS
+	* OS use AML interpreter to call functions in DSDT
+	* Run code defined in the method, send SCI to OS
+	* OS push events to Application?
